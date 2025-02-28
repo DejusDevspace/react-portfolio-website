@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  background-image: url("../src/assets/bg-img.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", serif;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* --------------- Sytles for the Header (resume) --------------- */
+.resume {
+  position: fixed;
+  right: 0;
+  top: 20px;
+  padding-right: 24px;
+}
+
+.resume ul {
+  list-style-type: none;
+}
+
+.resume ul li:hover {
+  transform: scale(1.1);
+}
+
+/* --------------- Styles for the sidebar --------------- */
+.sidebar {
+  width: 80px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease;
+  transform: translateX(0);
+  z-index: 1000;
+}
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li:hover {
+  transform: scale(1.1);
+}
+
+.sidebar ul li {
+  opacity: 0.3;
+}
+
+/* --------------- Styles for the Home page render --------------- */
+.home h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  animation: fadeInUp 1.5s ease;
+}
+
+.home p {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  animation: fadeInDown 1.5s ease;
+}
+
+/* --------------- Styles for the About page render --------------- */
+
+/* --------------- Styles for the Projects page render --------------- */
+
+/* --------------- Styles for the Contact page render --------------- */
