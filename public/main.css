@@ -6,7 +6,7 @@
 
 body {
   background-color: #fff;
-  background-image: url("../src/assets/bg-img.jpg");
+  background-image: url("../src/assets/img/bg-img.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -231,5 +231,79 @@ body {
 }
 
 /* --------------- Styles for the Projects page render --------------- */
+.work-overlay {
+  justify-content: left;
+  text-align: left;
+  display: block;
+  padding: 72px 216px;
+}
+
+.work-heading {
+  justify-content: left;
+  align-items: left;
+  text-align: justify;
+}
+
+.experience-list ul {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-list {
+  list-style-type: none;
+  padding: 0;
+  /* max-width: 800px; */
+  margin: 48px auto;
+}
+
+.project-item {
+  background: #333;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  opacity: 0.75;
+}
+
+.project-item i {
+  font-size: 40px;
+  color: #05000071;
+  margin-right: 15px;
+  position: fixed relative;
+  /* align-self: first baseline; */
+}
+
+.project-content {
+  flex: 1;
+}
+
+.project-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.project-title a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.project-title a:hover {
+  text-decoration: underline;
+}
+
+.project-description {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: #a89a9a;
+}
+
+.project-item:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s;
+}
 
 /* --------------- Styles for the Contact page render --------------- */

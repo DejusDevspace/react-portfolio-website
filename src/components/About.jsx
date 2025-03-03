@@ -21,8 +21,8 @@ function About() {
             processing, Azure MLOps, backend development, and many others, with
             a particular fascination for generative AI and its potential to
             revolutionize various industries. I'm proficient in using LangChain
-            to build powerful LLM-powered applications, constantly pushing the
-            boundaries of what's possible with AI.
+            to build powerful Large Language Model (LLM)-powered applications,
+            constantly pushing the boundaries of what's possible with AI.
           </p>
         </div>
         <div className="content experience-box">
