@@ -23,12 +23,10 @@ function App() {
   }
 
   return (
-    <div className="h-screen w-screen flex flex-col items-center justify-center bg-cover bg-center text-white font-montserrat">
+    <div>
       <Header />
       <SideBar onPageChange={setCurrentPage} />
-      <div className="overlay bg-black/80 p-12 flex flex-col items-center justify-center h-screen w-screen">
-        {renderPage()}
-      </div>
+      <div className="overlay">{renderPage()}</div>
     </div>
   );
 }
