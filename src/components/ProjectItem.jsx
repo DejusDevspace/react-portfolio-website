@@ -3,9 +3,11 @@ import Icon from "./Icon";
 
 function ProjectItem(props) {
   return (
-    <div>
-      <li className="project-item">
-        <Icon child={props.icon} size={props.size} />
+    <div className="project-item">
+      <li>
+        <i>
+          <Icon child={props.icon} size={props.size} />
+        </i>
         <div className="project-content">
           <p className="project-title">
             <a

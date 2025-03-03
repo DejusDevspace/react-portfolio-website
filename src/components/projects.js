@@ -8,7 +8,7 @@ const projects = [
     title: "Portfolio Website",
     description:
       "A personal portfolio website showcasing my professional work and skills, built with HTML, CSS, and JavaScript.",
-    link: "index.html",
+    link: "https://example.com",
     icon: JavascriptRoundedIcon,
   },
   {
@@ -16,7 +16,7 @@ const projects = [
     title: "Learning Assistant Chatbot",
     description:
       "A cross-platform mobile app designed for managing tasks and productivity, built using Flutter and Firebase.",
-    link: "https://example.com/project2",
+    link: "https://example.com",
     icon: PersonSearchRoundedIcon,
   },
   {
@@ -24,7 +24,7 @@ const projects = [
     title: "Data Analytics Dashboard",
     description:
       "A real-time data analytics dashboard for visualizing and analyzing key metrics, built with Python, Flask, and D3.js.",
-    link: "https://example.com/project3",
+    link: "https://example.com",
     icon: DataThresholdingRoundedIcon,
   },
 ];
