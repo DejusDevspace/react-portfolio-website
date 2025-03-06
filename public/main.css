@@ -48,6 +48,11 @@ body {
   transform: scale(1.1);
 }
 
+.download-button a {
+  text-decoration: none;
+  color: #fff;
+}
+
 /* --------------- Styles for the sidebar --------------- */
 .sidebar {
   width: 80px;

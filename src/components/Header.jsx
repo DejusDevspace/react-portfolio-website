@@ -1,12 +1,11 @@
 import React from "react";
-import CloudDownloadRoundedIcon from "@mui/icons-material/CloudDownloadRounded";
-import NavIcon from "./NavIcon";
+import DownloadButton from "./DownloadButton";
 
 function Header() {
   return (
     <div className="resume">
       <ul>
-        <NavIcon child={CloudDownloadRoundedIcon} size="large" />
+        <DownloadButton />
       </ul>
     </div>
   );
