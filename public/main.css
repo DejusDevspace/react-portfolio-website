@@ -354,28 +354,21 @@ body {
   list-style: none;
 }
 
-.social-link {
+.social-link a {
   display: inline-flex;
-  gap: 24px;
+  gap: 12px;
   align-items: center;
   list-style: none;
   transition: transform 0.3s;
   animation: fadeInUp 1.5s;
+  text-decoration: none;
+  color: white;
 }
 
 .social-link li {
   font-size: 1.2rem;
 }
 
-.social-link a {
-  text-decoration: none;
-  color: white;
-}
-
 .social-link:hover {
   transform: scale(1.05);
-}
-
-.social-link img {
-  height: 32px;
 }
