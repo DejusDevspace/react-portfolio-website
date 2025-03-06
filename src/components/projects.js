@@ -1,4 +1,4 @@
-import JavascriptRoundedIcon from "@mui/icons-material/JavascriptRounded";
+import WebRoundedIcon from "@mui/icons-material/WebRounded";
 import PersonSearchRoundedIcon from "@mui/icons-material/PersonSearchRounded";
 import DataThresholdingRoundedIcon from "@mui/icons-material/DataThresholdingRounded";
 
@@ -9,7 +9,7 @@ const projects = [
     description:
       "A personal portfolio website showcasing my professional work and skills, built with HTML, CSS, and JavaScript.",
     link: "https://example.com",
-    icon: JavascriptRoundedIcon,
+    icon: WebRoundedIcon,
   },
   {
     id: 1,
