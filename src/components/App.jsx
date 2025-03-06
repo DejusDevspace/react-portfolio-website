@@ -26,7 +26,17 @@ function App() {
     <div>
       <Header />
       <SideBar onPageChange={setCurrentPage} />
-      <div className="overlay">{renderPage()}</div>
+      <div
+        className={`overlay ${
+          currentPage === "projects"
+            ? "work-overlay"
+            : currentPage === "contact"
+            ? "contact-flex"
+            : ""
+        }`}
+      >
+        {renderPage()}
+      </div>
     </div>
   );
 }

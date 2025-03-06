@@ -4,7 +4,7 @@ import projects from "./projects";
 
 function Projects() {
   return (
-    <div className="work-overlay">
+    <div>
       <div className="work-heading">
         <h1>Projects</h1>
         <hr />

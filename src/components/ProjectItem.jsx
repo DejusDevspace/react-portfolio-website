@@ -1,13 +1,14 @@
 import React from "react";
 import Icon from "./Icon";
+import Paragraph from "./Paragraph";
 
 function ProjectItem(props) {
   return (
     <div className="project-item">
+      <i>
+        <Icon child={props.icon} size={props.size} />
+      </i>
       <li>
-        <i>
-          <Icon child={props.icon} size={props.size} />
-        </i>
         <div className="project-content">
           <p className="project-title">
             <a
@@ -17,7 +18,10 @@ function ProjectItem(props) {
               {props.title}
             </a>
           </p>
-          <p className="project-description">{props.description}</p>
+          <Paragraph
+            className="project-description"
+            content={props.description}
+          />
         </div>
       </li>
     </div>
