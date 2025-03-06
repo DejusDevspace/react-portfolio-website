@@ -23,7 +23,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="hero-section">
       <Header />
       <SideBar onPageChange={setCurrentPage} />
       <div

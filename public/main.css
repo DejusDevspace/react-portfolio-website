@@ -32,6 +32,39 @@ body {
   width: 100vw;
 }
 
+@media (max-width: 768px) {
+  .overlay {
+    padding: 20px;
+  }
+  .overlay h1 {
+    font-size: 2.5rem;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .overlay h1 {
+    font-size: 3rem;
+  }
+
+  .overlay p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .overlay h1 {
+    font-size: 2rem;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+}
+
 /* --------------- Sytles for the Header (resume) --------------- */
 .resume {
   position: fixed;
@@ -54,6 +87,17 @@ body {
 }
 
 /* --------------- Styles for the sidebar --------------- */
+.toggle-button {
+  display: none; /* Hide toggle button by default */
+  border: none;
+  cursor: pointer; /* Pointer on hover */
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1001; /* Above the sidebar */
+  color: white;
+}
+
 .sidebar {
   width: 80px;
   height: 100vh;
@@ -86,6 +130,37 @@ body {
   opacity: 0.3;
 }
 
+@media (max-width: 768px) {
+  .sidebar {
+    top: 20px;
+    left: auto;
+    align-items: center;
+    justify-content: start;
+    transform: translateX(-100%);
+    display: none;
+  }
+
+  .sidebar ul {
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+    display: block;
+  }
+
+  .toggle-button {
+    display: block;
+  }
+
+  i {
+    font-size: 16px;
+  }
+}
+
 /* --------------- Styles for the Home page render --------------- */
 .home h1 {
   font-size: 4rem;
@@ -98,6 +173,39 @@ body {
   font-size: 1.3rem;
   margin-bottom: 10px;
   animation: fadeInDown 1.5s ease;
+}
+
+@media (max-width: 768px) {
+  .home {
+    padding: 20px;
+  }
+  .home h1 {
+    font-size: 2.5rem;
+  }
+
+  .home p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .home h1 {
+    font-size: 3rem;
+  }
+
+  .home p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .home h1 {
+    font-size: 2rem;
+  }
+
+  .home p {
+    font-size: 1rem;
+  }
 }
 
 /* --------------- Styles for the About page render --------------- */
@@ -235,6 +343,89 @@ body {
   font-size: 1rem;
 }
 
+@media (max-width: 1400px) {
+  .content-wrapper {
+    max-width: 992px;
+    overflow-y: scroll;
+  }
+
+  .content-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .skills ul li {
+    max-width: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .content-wrapper h2 {
+    font-size: 1.5rem;
+  }
+
+  .content-wrapper h3 {
+    font-size: 1rem;
+  }
+
+  .content-wrapper p {
+    font-size: 0.8rem;
+  }
+
+  .about-section ul li {
+    font-size: 0.8rem;
+  }
+
+  .about-section em {
+    font-size: 1rem;
+  }
+
+  .skills ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .skills ul li {
+    max-width: none;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-wrapper {
+    height: 520px;
+    margin-top: 0;
+    padding: 10px;
+  }
+
+  .summary h2 {
+    margin-top: 0;
+  }
+
+  .skills ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-section {
+    padding: 0;
+  }
+}
+
 /* --------------- Styles for the Projects page render --------------- */
 .work-overlay {
   justify-content: left;
@@ -309,6 +500,75 @@ body {
 .project-item:hover {
   transform: translateY(-2px);
   transition: transform 0.2s;
+}
+
+@media (max-width: 1400px) {
+  .experience-list ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1200px) {
+  .project-title {
+    font-size: 1.5rem;
+  }
+
+  .project-item {
+    min-width: 350px;
+  }
+}
+
+@media (max-width: 992px) {
+  .experience-list ul {
+    grid-template-columns: 1fr;
+  }
+
+  .project-list {
+    margin: 24px auto;
+  }
+
+  .project-item {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-overlay {
+    padding: 54px 150px 54px 150px;
+  }
+
+  .work-heading {
+    margin-top: 30px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .work-overlay {
+    padding: 54px 66px 54px 84px;
+  }
+
+  .project-item {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-title {
+    font-size: 1rem;
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
+
+  .work-overlay {
+    padding: 54px 72px 54px 36px;
+  }
+
+  .project-item {
+    max-width: 200px;
+  }
 }
 
 /* --------------- Styles for the Contact page render --------------- */
