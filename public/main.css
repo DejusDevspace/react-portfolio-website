@@ -87,17 +87,6 @@ body {
 }
 
 /* --------------- Styles for the sidebar --------------- */
-.toggle-button {
-  display: none; /* Hide toggle button by default */
-  border: none;
-  cursor: pointer; /* Pointer on hover */
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 1001; /* Above the sidebar */
-  color: white;
-}
-
 .sidebar {
   width: 80px;
   height: 100vh;
@@ -130,12 +119,24 @@ body {
   opacity: 0.3;
 }
 
+.toggle-button {
+  display: none;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1001;
+  color: white;
+}
+
 @media (max-width: 768px) {
   .sidebar {
+    width: 100vw;
     top: 20px;
     left: auto;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
     transform: translateX(-100%);
     display: none;
   }
