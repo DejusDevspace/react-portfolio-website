@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Header from "./Header";
+import Resume from "./Resume";
 import SideBar from "./SideBar";
 import Home from "./Home";
 import About from "./About";
@@ -23,9 +23,9 @@ function App() {
   }
 
   return (
-    <div className="hero-section">
-      <Header />
+    <div>
       <SideBar onPageChange={setCurrentPage} />
+      <Resume />
       <div
         className={`overlay ${
           currentPage === "projects"

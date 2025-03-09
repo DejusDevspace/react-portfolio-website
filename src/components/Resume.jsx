@@ -1,7 +1,7 @@
 import React from "react";
 import DownloadButton from "./DownloadButton";
 
-function Header() {
+function Resume() {
   return (
     <div className="resume">
       <ul>
@@ -11,4 +11,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Resume;

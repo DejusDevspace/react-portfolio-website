@@ -25,11 +25,11 @@ function SideBar({ onPageChange }) {
   }
 
   return (
-    <div>
+    <div className="hero-section">
       <div className="toggle-button" onClick={() => setIsOpen(!isOpen)}>
         <Icon child={MenuIcon} size={iconSize} />
       </div>
-      <div className={`sidebar ${isOpen ? "active" : ""}`}>
+      <nav className={`sidebar ${isOpen ? "active" : ""}`}>
         <ul>
           {icons.map((item, index) => (
             <NavIcon
@@ -42,7 +42,7 @@ function SideBar({ onPageChange }) {
             />
           ))}
         </ul>
-      </div>
+      </nav>
     </div>
   );
 }
