@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import NavIcon from "./NavIcon";
 import CottageRoundedIcon from "@mui/icons-material/CottageRounded";
 import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
