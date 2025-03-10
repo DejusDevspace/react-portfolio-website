@@ -638,3 +638,25 @@ body {
 .social-link:hover {
   transform: scale(1.05);
 }
+
+@media (max-width: 992px) {
+  .contact-flex {
+    padding-top: 15%;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    height: auto;
+    width: fit-content;
+  }
+
+  .contact-grid-img {
+    display: none;
+    background-image: none;
+    height: 0;
+  }
+
+  .contact-item {
+    padding: 60px;
+  }
+}
